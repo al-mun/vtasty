@@ -1,25 +1,20 @@
-import React from 'react';
-import { useGlobalContext } from './context';
-import { FaTimes } from 'react-icons/fa';
+import React from "react"
+import {GrClose} from "react-icons/gr"
 
+const Modal = (props)=>{
+    return(
 
+        <div className={`${props.isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'}`}>
+            <div className='modal-container'>
+                
+                  {props.modalInfo}
+    
+                <button className='close-modal-btn' onClick={props.closeModal}>
+                  <GrClose/>
+                </button>
+            </div>
+        </div> 
+    )
+}
 
-const Modal = ({items}) => {
-  const { isModalOpen, closeModal} = useGlobalContext();
-
-
-  return (
-        <div className={`${isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'}`}>
-     
-          <div className='modal-container'>
-            <h3>Modal</h3>
-            
-            <button className='close-modal-btn' onClick={closeModal}>
-              <FaTimes></FaTimes>
-            </button>
-          </div>
-        </div>
-      );
-};
-
-export default Modal;
+export default Modal

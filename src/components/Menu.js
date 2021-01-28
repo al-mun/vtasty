@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useGlobalContext } from './context';
-import {GrClose} from "react-icons/gr"
+import Modal from "./Modal"
 
 const Menu = ({items}) => {
 
@@ -20,12 +20,11 @@ const Menu = ({items}) => {
       {items.map((menuItem) => {
         const { id, title, img, desc, time, steps, ingredients} = menuItem;
         return (
-          <div>
+          <div key={id}>
             <article key={id} className='menu-item btn' 
             onClick={()=>{setModalInfo(currentInfo=> 
             <div>
               <h3>{title}</h3>
-              <h4>{desc}</h4>
               <p><strong>Cook time: </strong>{time} minutes</p>
 
               <p><strong>Ingredients:</strong> {ingredients}</p>
@@ -49,17 +48,8 @@ const Menu = ({items}) => {
               <div>
               </div>
             </article>
-          {/* modal */}
-            <div className={`${isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'}`}>
-              <div className='modal-container'>
-                
-                  {modalInfo}
-    
-                <button className='close-modal-btn' onClick={closeModal}>
-                  <GrClose/>
-                </button>
-              </div>
-            </div>
+
+          <Modal modalInfo={modalInfo} isModalOpen={isModalOpen} closeModal={closeModal}/>
           </div>
         );
       })}

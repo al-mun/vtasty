@@ -1,12 +1,12 @@
 const menu = [
     {
       id: 1,
-      title: 'arepas',
+      title: 'Arepas',
       category: 'breakfast',
       time: 30,
       img: 'images/arepas.jpeg',
       desc: 'Traditional Colombian corn cakes',
-      ingredients: "cornmeal, salt, oil, cheese (optional)",
+      ingredients: "water, cornmeal, salt, oil, cheese (optional)",
       steps: [`Pour cornmeal into a bowl.`,
       `Add water to make cornmeal into a paste.`, 
       `Mix with hands until cornmeal is
@@ -41,7 +41,49 @@ const menu = [
       `Mix well and cook on medium heat for 5 minutes`,
       `Once cooked, add desired cheese`,
       `Enjoy!`]
-    }
+    }, 
+    {
+      id: 3,
+      title: 'Fish Tacos and Fries',
+      category: 'dinner',
+      time: 25,
+      img: 'images/fishtacos.jpeg',
+      desc: "Tacos and fries",
+      ingredients: "Tilapia fillets, tortillas (hard or soft), lettuce, onion, fries, salsa, avocado",
+      steps: ['Microwave fillets for 1 minute to defrost. Rinse afterward.',
+      `Onions: remove top layer, cut out 1/5, cut into thin slices.`,
+      `Lettuce: Remove top layer, chop into slices.`,
+      `Fries: Heat oil for about 3 minutes on medium heat, or airfry for 15 minutes.`,
+      `Add fries to oil, cook until golden.`,
+      `Tortillas: warm on medium heat until light brown`,
+      `Fillets: chop fish into small strips, season with salt and garlic, fry chunks on medium until golden/crispy.`, 
+      `Add fish, onions, and lettuce to tortillas.`, 
+      `Add desired toppings (salsa, cheese, avocado slices)`, 
+      `Enjoy!`]},
+    {
+      id: 4,
+      title: 'Cream of Mushroom',
+      category: 'dinner',
+      time: 35,
+      img: 'images/creamofmushroom.jpeg',
+      desc: "Tacos and fries",
+      ingredients: "Water, 1/5 onion, 1 stick of celery, mushrooms (4 for two bowls), butter, table cream(optional), garlic powder, salt, black pepper, flour.",
+      steps: ['Separate onion into layers, cut celery stick into a few shorter pieces, cut mushrooms into pieces.',
+      `Add water to pot half way, add: onion, mushrooms, celery, garlic powder, salt, pepper, and boil on medium.`,
+      `Lettuce: Remove top layer, chop into slices.`,
+      `When boiling, turn off heat, and wait 5 minutes for mix to cool.`,
+      `Pour most of the mix into blender, leaving 2 cups of boiling water with no content.`,
+      `Pour water into a bowl and add 1 spoonful of flour. Mix well until no clumps are visible.`,
+      `Pour blended mix back into pot, add the flour mix as well.`, 
+      `Mix well and heat to on low, stirring to avoid clumps.`, 
+      `Wait for mix to react with flour (it thickens), taste to see if more salt, pepper or garlic is needed.`, 
+      `Note: If too thick, add water and continue cooking until desired thickness.`,
+      `If too liquid, add 1/2 spoon of flour to water.`,
+      `Repeat steps if necessary.`,
+      `Add 1 spoonful of butter`,
+      `Add 1-2 spoonfuls of table cream`,
+      `Mix well.`
+      `Enjoy!`]}
   ];
   export default menu;
   
