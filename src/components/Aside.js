@@ -16,12 +16,12 @@ const Aside = (props)=>{
           
           <ul className="social-icons-centered hero-icons">
               <li>
-                  <a href="https://www.linkedin.com/in/alejandro-munoz-429350115" target="_blank" className="social-icon">
+                  <a href="https://www.linkedin.com/in/al-mun" target="_blank" className="social-icon" rel="noreferrer">
                     <FaLinkedin/>
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:alejandro@munoza.com" className="social-icon">
+                  <a href="mailto:almunz93@gmail.com" className="social-icon">
                     <MdEmail/>                         
                   </a>
                 </li>
