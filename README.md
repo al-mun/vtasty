@@ -1,7 +1,5 @@
 # Recipe app built with React
 
-http://munoza.com/vtasty
-
 This simple recipe app uses React state management through hooks, as well as components and props.  
 
 # Use of useState (react hooks)
